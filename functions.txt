@@ -1,0 +1,6 @@
+image_2 = image_1.filter(ImageFilter.BLUR())
+:filter images
+image_1 = Image.open('./faces/image.webp')
+:open an image
+image_1 = face_recognition.load_image_file('./faces/image.webp')
+:loads image using face_recognition
