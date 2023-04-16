@@ -15,11 +15,11 @@ for i in range(0,len(image_1_loc)):
  draw = ImageDraw.Draw(image_1_pil)
  draw.rectangle((left,top,right,bottom),outline=(250,7,0))
 b = str(len(image_1_loc))
-a = "the total no of faces are "+ b +" and they are"
+a = "The total no of Faces are "+ b +" and they are"
 print(a)
 
 root = Tk()
-frm = ttk.Frame(root, padding=10)
+frm = ttk.Frame(root, padding=50)
 frm.grid()
 ttk.Label(frm, text=a).grid(column=0, row=0)
 root.mainloop()
