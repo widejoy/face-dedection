@@ -12,4 +12,6 @@ for i in range(0,len(image_1_loc)):
 
  draw = ImageDraw.Draw(image_1_pil)
  draw.rectangle((left,top,right,bottom),outline=(250,7,0))
+print("the total no of faces are ",len(image_1_loc)," and they are")
+
 image_1_pil.show()
