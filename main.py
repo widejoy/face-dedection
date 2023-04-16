@@ -1,4 +1,6 @@
 import face_recognition
+from tkinter import *
+from tkinter import ttk
 from PIL import Image,ImageDraw
 image_1 = face_recognition.load_image_file('./faces/faces.webp')
 image_1_loc = face_recognition.face_locations(image_1)
@@ -12,6 +14,14 @@ for i in range(0,len(image_1_loc)):
 
  draw = ImageDraw.Draw(image_1_pil)
  draw.rectangle((left,top,right,bottom),outline=(250,7,0))
-print("the total no of faces are ",len(image_1_loc)," and they are")
+b = str(len(image_1_loc))
+a = "the total no of faces are "+ b +" and they are"
+print(a)
+
+root = Tk()
+frm = ttk.Frame(root, padding=10)
+frm.grid()
+ttk.Label(frm, text=a).grid(column=0, row=0)
+root.mainloop()
 
 image_1_pil.show()
