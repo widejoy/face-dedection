@@ -2,7 +2,7 @@ import face_recognition
 from tkinter import *
 from tkinter import ttk
 from PIL import Image,ImageDraw
-image_1 = face_recognition.load_image_file(string)
+
 
 win= Tk()
 
@@ -26,6 +26,7 @@ ttk.Button(win, text= "Okay",width= 20, command= display_text).pack(pady=20)
 
 
 win.mainloop()
+image_1 = face_recognition.load_image_file(string)
 image_1_loc = face_recognition.face_locations(image_1)
 image_1_pil = Image.fromarray(image_1)
 for i in range(0,len(image_1_loc)):
