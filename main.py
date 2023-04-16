@@ -6,7 +6,6 @@ image_1 = face_recognition.load_image_file(string)
 
 win= Tk()
 
-#Set the geometry of Tkinter frame
 win.geometry("750x250")
 
 def display_text():
